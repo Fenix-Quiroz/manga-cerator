@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevGenius
 
-## Getting Started
+**Manga Creator AI** es una aplicación web que te permite generar tus propios mangas en un instante. Puedes elegir el genero que desees y tu decidiras que hacer el personaje y que pasa en la historia. La IA seguirá creando el manga contigo.
 
-First, run the development server:
+![Vista previa del proyecto](/public/home-web.png)
+![Vista previa del proyecto](/public/main-web.png)
+
+---
+
+## 🚀 Cómo iniciar el proyecto
+
+1. Clona el repositorio:
+
+   ```bash
+   https://github.com/Fenix-Quiroz/DevGenius.git
+   ```
+
+2. En la terminal ejecuta :
+
+```bash
+  npm install
+```
+
+y después
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧰 Tecnologías utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Gemini API** – Utilizada para integrar inteligencia artificial en la aplicación.
+2. **React** – Librería para construir interfaces de usuario.
+3. **Vite** – Herramienta de desarrollo y empaquetado rápida para proyectos modernos.
+4. **AIsdk de Vercel** – SDK para integrar inteligencia artificial en la aplicación.
+5. **Tailwind CSS** – Heramienta para estilizar mas rápido y fácil.
+6. **React-Toastify** – Librería para mostrar notificaciones de manera fácil.
+7. **React-Syntax-Highlighter** – Librería para resaltar la sintaxis de fragmentos de código.
+9. **ai-sdk.dev/elements** – AI Elements es una biblioteca de componentes y un registro personalizado basado en shadcn/ui para ayudarte a crear aplicaciones nativas de IA más rápido. Ofrece componentes prediseñados como conversaciones, mensajes y más..
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔑 Configuración de la API de Gemini
 
-## Learn More
+Para usar la inteligencia artificial de Gemini, asegúrate de tener una API Key válida. Puedes obtenerla desde [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-To learn more about Next.js, take a look at the following resources:
+Una vez obtenida, crea un archivo `.env` en la raíz del proyecto y añade:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+GOOGLE_GENERATIVE_AI_API_KEY=tu_clave_aquí
+```
